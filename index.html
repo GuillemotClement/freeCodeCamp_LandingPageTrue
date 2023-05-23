@@ -15,9 +15,16 @@
         </div>
         <nav id="nav-bar">
             <ul id="barreNavigation">
-                <li class="nav-link"><a href="#">Content1</a></li>
-                <li class="nav-link"><a href="#">Content2</a></li>
-                <li class="nav-link"><a href="#">Content3</a></li>
+                <li >
+                    <p>
+                        <a class="nav-link"
+                            href="#presentation">Présentation</a>
+                    </p>
+                </li>
+                <li >
+                    <p><a class="nav-link" href="#price">Nos produits</a></p></li>
+                <li >
+                   <p><a  class="nav-link"href="#contacts">Contacts</a></p></li>
             </ul>
         </nav>
     </header>
@@ -26,30 +33,52 @@
         <!-- ICI ON PLACE LA VIDEO DE PRESENTATION DU PRODUIT VENDU -->
         <!-- ON VIENT AJOUTER UN SLOGAN & UNE FORMULAIRE DE RECUP DE DONNEE -->
         <p id="slogan">Exercitation exercitation dolor aliquip mollit sint quis irure pariatur labore reprehenderit velit et zoccaecat et.</p>
-        <form action="#" id="sendInfo">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
             <label for="name" id="nameLabel">Nom :
                 <input type="text" id="name" placeholder="Clément Blanchatre">
             </label>
             <label for="email" id="emailLabel">Email :
-                <input type="email" placeholder="clementblanchatre@mail.com"
+                <input type="email" 
+                id="email"
+                name="email"
+                placeholder="clementblanchatre@mail.com"
                 required>
             </label>
+            <input type="submit" id="submit" value="Envoyer">
         </form>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Xsr3lVvNPtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Xsr3lVvNPtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
 
     <section id="price">
         <div class="priceFrame">
             <h2 class="titlePrice">Baton</h2>
-            <p class="describePrice"></p>
+            <p class="describePrice">Mollit dolore veniam ex id dolore magna sint. Officia laboris amet sunt ad excepteur laboris ex. Laboris magna tempor aliquip ut. Magna anim ex velit anim amet cupidatat.</p>
+            <div class="price">59.99$</div>
         </div>
         <div class="priceFrame"></div>
             <h2 class="titlePrice">Sac de trail</h2>
-            <p class="describePrice"></p>
+            <p class="describePrice">Enim laboris est commodo consectetur excepteur labore eu. Lorem Lorem exercitation et sit sint qui. Esse incididunt quis eu in occaecat quis deserunt id occaecat laboris aliquip adipisicing ullamco. Quis amet quis est ipsum eiusmod ut proident quis non. Duis duis commodo nostrud eu nisi exercitation sit nisi aliqua nulla deserunt cillum mollit. Incididunt exercitation irure id sunt elit commodo.</p>
+            <div class="price">89.99$</div>
         <div class="priceFrame">
             <h2 class="titlePrice">T-shirt</h2>
-            <p class="describePrice"></p>
+            <p class="describePrice">Ut elit eiusmod Lorem laborum id proident eu dolore. Voluptate consequat eiusmod ullamco est. Dolor culpa elit in sit quis id ea deserunt in ex labore ex dolor elit. Eiusmod exercitation reprehenderit exercitation labore nostrud nostrud ullamco amet eu sint nostrud ea dolor ipsum.</p>
+            <div class="price">19.99$</div>
         </div>
     </section>
+
+    <section id="contacts">
+        <h2 id="subtitleContact">Nous retrouver :</h2>
+        <div id="socialMedia">
+            <a href="#"><img src="pics/facebook.svg" width="50px"></a>
+            <a href="#"><img src="pics/instagram.svg" width="50px"></a>
+            <a href="#"><img src="pics/strava.svg" width="50px"></a>
+            <a href="#"><img src="pics/twitch.svg" width="50px"></a>
+            <a href="#"><img src="pics/youtube.svg" width="50px"></a>
+        </div>
+    </section>
+    <footer>
+        <p id="droit">All Right for me</p>
+        <p id="years">Planère Running 2023</p>
+    </footer>
 </body>
 </html>

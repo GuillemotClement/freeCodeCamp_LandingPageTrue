@@ -1,11 +1,12 @@
+@media(prefers-reduced-motion: no-preference){
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
 header{
-    border: red 1px solid;
+    position: sticky;
+    top: 0;
+    display: flex;
 }
 
-#presentation{
-    border: red 1px solid;
-}
-
-#price{
-    border: red 1px solid;
-}
