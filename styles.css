@@ -4,9 +4,69 @@
     }
   }
 
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+html{
+      font-size: 16px;
+}
+  
+body{
+      font-family: "Open Sans", sans-serif;
+      width: 100%;
+      margin: 0;
+}
+
+  /* Le header est composer du nom du site, du logo, et de la barre de navigation */
 header{
     position: sticky;
     top: 0;
+    background-color: #202426;
+    color: white;
+    display: flex;
+    height: 300px; 
+    /* padding: 5%; */
+    border: 1px red solid;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Travail sur la partie logo & titre */
+#logoSection{
+    display: flex;
+    /* border: 1px red solid; */
+    align-items: center;
+}
+/* Travail sur le logo du header */
+#header-img{
+    height: 100px;
+    width: 100px;;
+    margin-right: 20px;
+}
+/* Travail sur le titre du site */
+#nameSite{
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+/* Travail sur la barre de navigation */
+/* Sélection de <nav> */
+#nav-bar{
+    
+}
+/* Selection des ul */
+#barreNavigation{
     display: flex;
 }
-
+/* Selection des li  */
+.liNav{
+    list-style: none;
+}
+.liNav a{
+    color: white;
+}
+/* Selection des texte du menu navigation */
+.liNav a:hover{
+    color: red;
+}
