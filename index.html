@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Landing Page</title>
+    <!-- IMPORT FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Outfit&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
@@ -34,22 +38,30 @@
         </nav>
     </header>
     
+    <div id="content">
     <section id="presentation">
         <!-- ICI ON PLACE LA VIDEO DE PRESENTATION DU PRODUIT VENDU -->
         <!-- ON VIENT AJOUTER UN SLOGAN & UNE FORMULAIRE DE RECUP DE DONNEE -->
         <p id="slogan">Exercitation exercitation dolor aliquip mollit sint quis irure pariatur labore reprehenderit velit et zoccaecat et.</p>
         <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <label for="name" id="nameLabel">Nom :
-                <input type="text" id="name" placeholder="Clément Blanchatre">
-            </label>
-            <label for="email" id="emailLabel">Email :
-                <input type="email" 
-                id="email"
-                name="email"
-                placeholder="clementblanchatre@mail.com"
-                required>
-            </label>
-            <input type="submit" id="submit" value="Envoyer">
+            <div class="inputform">
+                <label class="formInput" for="name" id="nameLabel">Nom :
+                    <input type="text" id="name" placeholder="Clément Blanchatre" class="formInput userData">
+                </label>
+            </div>
+            <div class="inputform">
+                <label for="email" id="emailLabel" class="formInput">Email :
+                    <input type="email" 
+                    id="email"
+                    name="email"
+                    placeholder="clementblanchatre@mail.com"
+                    required class="formInput userData">
+                </label>
+            </div>
+            <div class="inputform">
+                <input type="submit" id="submit" value="Envoyer">
+            </div>
+            
         </form>
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Xsr3lVvNPtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
@@ -81,6 +93,7 @@
             <a href="#"><img src="pics/youtube.svg" width="50px"></a>
         </div>
     </section>
+</div>
     <footer>
         <p id="droit">All Right for me</p>
         <p id="years">Planère Running 2023</p>
